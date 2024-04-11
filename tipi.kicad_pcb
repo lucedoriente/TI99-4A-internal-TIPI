@@ -10106,24 +10106,24 @@
 		(layer "Edge.Cuts")
 		(uuid "d499bd42-6d16-4161-920c-06500a6d1362")
 	)
-	(gr_text "github.com/jedimatt42/tipi"
-		(at 101.4984 152.019 0)
+	(gr_text "github.com/lucedoriente/\nTI99-4A-internal-TIPI.git"
+		(at 104.4956 138.3792 0)
 		(layer "F.SilkS")
 		(uuid "8e887946-ee0e-4fd1-950c-24add2fbd0fd")
 		(effects
 			(font
-				(size 1.5 1.5)
+				(size 1.4 1.4)
 				(thickness 0.3)
 			)
 		)
 	)
 	(gr_text "TIPI rev1 for TI/99-24A\noriginal ElectricLab & Jedimatt42\nlayout Alessio Iodice"
-		(at 101.8032 136.3472 0)
+		(at 104.1146 132.8166 0)
 		(layer "F.SilkS")
 		(uuid "c3b8317a-db62-4d66-975e-e65ceffc56a4")
 		(effects
 			(font
-				(size 1.5 1.5)
+				(size 1.4 1.4)
 				(thickness 0.3)
 			)
 		)
