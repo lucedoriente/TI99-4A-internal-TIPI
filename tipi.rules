@@ -1,0 +1,106 @@
+
+(rules PCB tipi
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 50)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.0)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "JTAG_TCK" "JTAG_TDO" "JTAG_TMS" "JTAG_TDI" "TI_EXTINT" "TI_A5" "TI_A10" "TI_A4"
+    "TI_A11" "TI_DBIN" "TI_A3" "TI_A12" "TI_A8" "TI_A13" "TI_A14" "TI_A7"
+    "TI_A9" "TI_A15" "TI_A2" "TI_CRUCLK" "TI_PH3" "TI_WE" "TI_A6" "TI_A1"
+    "TI_A0" "TI_MEMEN" "TI_CRUIN" "TI_D0" "TI_D3" "TI_D1" "TI_D7" "TI_D2"
+    "TI_D5" "TI_D6" "TI_D4" "R_DIN" "R_DOUT" "R_CLK" "R_RESET" "R_LE"
+    "R_DC" "R_RT" "CRUB_0" "CRUB_1" "CRUB_2" "CRUB_3" CRU0 "DSR_EN"
+    "DSR_B0" "DSR_B1" "DB_DIR" "TP_D6" "DB_EN" "TP_D4" "TP_D7" "TP_D2"
+    "TP_D5" "TP_D3" "TP_D1" "TP_D0" "Net-(CRUBASE1-P1)" "Net-(D1-A)" "Net-(D1-K)" "unconnected-(J1-AUDIOIN-Pad44)"
+    "unconnected-(J1-IAQ-Pad41)" "unconnected-(J1-LOAD-Pad13)" "unconnected-(J1--5V-Pad43)" "unconnected-(J1-SBE-Pad2)" "unconnected-(J1-RESET-Pad3)" "unconnected-(J1-READY-Pad12)" "unconnected-(J1-MBE-Pad28)" "unconnected-(JTAG1-Pad8)"
+    "unconnected-(JTAG1-Pad6)" "unconnected-(JTAG1-Pad7)" "Net-(Q1-B)" "Net-(RPi1-P2)" "Net-(U1-P68)" "Net-(U1-P67)" "Net-(U1-P66)" "Net-(U1-P65)"
+    "unconnected-(U1-P53-Pad53)" "unconnected-(U1-P49-Pad49)" "unconnected-(U1-P28-Pad28)" "unconnected-(U1-P24-Pad24)" "unconnected-(U1-P56-Pad56)" "unconnected-(U1-P60-Pad60)" "unconnected-(U1-P9-Pad9)" "unconnected-(U1-P59-Pad59)"
+    "unconnected-(U1-P54-Pad54)" "unconnected-(U1-P37-Pad37)" "unconnected-(U1-P58-Pad58)" "unconnected-(U1-P40-Pad40)" "unconnected-(U1-P39-Pad39)" "unconnected-(U1-P42-Pad42)" "unconnected-(U1-P10-Pad10)" "unconnected-(U1-P64-Pad64)"
+    "unconnected-(U1-P19-Pad19)" "unconnected-(U1-P46-Pad46)" "unconnected-(U1-P63-Pad63)" "unconnected-(U1-P20-Pad20)" "unconnected-(U1-P55-Pad55)" "unconnected-(U1-P32-Pad32)" "unconnected-(U1-P36-Pad36)" "unconnected-(U1-P25-Pad25)"
+    "unconnected-(U1-P34-Pad34)" "unconnected-(U1-P50-Pad50)" "unconnected-(U1-P74-Pad74)" "unconnected-(U1-P41-Pad41)" "unconnected-(U1-P43-Pad43)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    +3V3 GND +5V
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 1250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

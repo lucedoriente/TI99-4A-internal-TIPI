@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "tipi-rescue")(type "KiCad")(uri "${KIPRJMOD}/tipi-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "ti32ksideport")(type "Legacy")(uri "${KIPRJMOD}/ti32ksideport.lib")(options "")(descr ""))
+  (lib (name "xc9572xl-7vq64c")(type "Legacy")(uri "${KIPRJMOD}/xc9572xl-7vq64c.lib")(options "")(descr ""))
+)
