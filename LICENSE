@@ -1,0 +1,86 @@
+# TI99-4A-internal-TIPI — DUAL NON-COMMERCIAL LICENSE
+
+> 🇮🇹 **Versione italiana disponibile qui**: [LICENSE.it.md](LICENSE.it.md)
+
+Copyright (c) 2026 Author and Contributors of `TI99-4A-internal-TIPI`.
+All commercial rights are expressly reserved.
+
+This repository contains both **Hardware designs** (KiCad schematics, PCB layouts, Gerber/BOM manufacturing files) and **Documentation**, as well as **Software/Firmware source and binary code** (RP2040 C/PIO firmware and 8-bit 6502/Z80/6809 diagnostic ROMs).
+
+This project is released under a **Dual-Licensing Model**:
+1. **Free for Personal, Hobbyist, Educational, and Research Use** (under the non-commercial terms specified below).
+2. **Commercial License Required for Any For-Profit Activity**: Any commercial manufacturing, distribution, or sale (of assembled boards, DIY kits, bare PCBs beyond cost-recovery, or devices pre-flashed with this project's firmware/ROMs) on marketplaces (e.g., eBay, Tindie, AliExpress, Amazon, Etsy), online/physical stores, or retro-computing expos **is strictly prohibited without prior written authorization and a commercial license agreement from the Author**.
+
+---
+
+## PART A: Hardware Designs & Documentation License (`CC BY-NC-SA 4.0`)
+
+All electrical schematics, PCB layouts, KiCad libraries, Gerber files, and technical documentation in this repository are licensed under the:
+
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
+Full legal code: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+### Summary of Hardware Terms:
+- **Attribution (`BY`)**: You must give appropriate credit to the original author of `TI99-4A-internal-TIPI`, provide a link to the license, and indicate if changes were made.
+- **NonCommercial (`NC`)**: You may not use the material for commercial purposes or monetary compensation/profit without explicit written permission from the Author.
+- **ShareAlike (`SA`)**: If you remix, transform, or build upon the material, you must distribute your contributions under the exact same license (`CC BY-NC-SA 4.0`).
+
+### Personal Fabrication & Minimum-Order-Quantity Exception (Hobbyist PCB Fab Exception)
+As a narrow exception solely to allow hobbyists to deal with PCB manufacturer minimum order quantities:
+1. You **are permitted** to upload the production files (Gerbers/BOM) to a third-party PCB fabrication service (e.g., JLCPCB, PCBWay, OSHPark, Eurocircuits) solely to manufacture prototypes for your own personal use.
+2. Where a PCB manufacturer enforces a Minimum Order Quantity (e.g., a minimum batch of 5 or 10 bare PCBs), you **are permitted** to transfer the surplus **bare (unpopulated) PCBs** to other hobbyists **strictly at documented out-of-pocket cost** (unit PCB cost + customs/taxes + actual shipping, with **zero profit margin**) up to a maximum of **10 bare PCBs per person per year**.
+3. This exception **never applies** to the sale of assembled boards, component kits, or recurring listings on e-commerce platforms.
+
+---
+
+## PART B: Firmware & Diagnostic ROM Code License (`PolyForm Noncommercial 1.0.0`)
+
+All source and binary code (including the Raspberry Pi Pico firmware in `pico-firmware/`, protocol headers in `common/protocol/`, and 8-bit diagnostic ROM sources/binaries in `boards/*/rom-*`) is licensed under the:
+
+**PolyForm Noncommercial License 1.0.0**
+Official URL: https://polyformproject.org/licenses/noncommercial/1.0.0
+
+### Full Text of the PolyForm Noncommercial License 1.0.0
+
+#### Acceptance
+In order to get any license under these terms, you must agree to them as both strict obligations and conditions to all your licenses.
+
+#### Copyright License
+The licensor grants you a copyright license for the software to do everything you might do with the software that would otherwise infringe the licensor's copyright in it for any permitted purpose. However, you may only distribute the software according to [Distribution License] and make changes or new works based on the software according to [Changes and New Works License].
+
+#### Distribution License
+The licensor grants you an additional copyright license to distribute copies of the software. Your license to distribute covers distributing the software with changes and new works permitted by [Changes and New Works License].
+
+#### Notices
+You must ensure that anyone who gets a copy of any part of the software from you also gets a copy of these terms or the URL for them above, as well as copies of any plain-text lines beginning with `Required Notice:` that the licensor provided with the software. For example:
+`Required Notice: Copyright (c) 2026 TI99-4A-internal-TIPI Author. Commercial use prohibited without written permission.`
+
+#### Changes and New Works License
+The licensor grants you an additional copyright license to make changes and new works based on the software for any permitted purpose.
+
+#### Patent License
+The licensor grants you a patent license for the software that covers patent claims the licensor can license, or becomes able to license, that you would infringe by using the software.
+
+#### Noncommercial Purposes Only
+Any purpose is a permitted purpose, except for providing any product or service for commercial sale, or any use in a commercial business or for monetary compensation without prior written authorization from the copyright holder.
+
+#### Fair Use
+You may have "fair use" rights for the software under the law. These terms do not limit them.
+
+#### No Other Rights
+These terms do not allow you to sublicense or transfer any of your licenses to anyone else, or prevent the licensor from granting licenses to anyone else. These terms do not imply any other licenses.
+
+#### Patent Defense
+If you make any written claim that the software infringes or contributes to infringement of any patent, your patent license for the software granted under these terms ends immediately. If your company makes such a claim, your patent license ends immediately for work on behalf of your company.
+
+#### Violations
+The first time you are notified in writing that you have violated any of these terms, or done anything with the software not covered by your licenses, your licenses can nonetheless continue if you come into full compliance with these terms, and take practical steps to correct past violations, within 32 days of receiving notice. Otherwise, all your licenses end immediately.
+
+#### No Liability
+***As far as the law allows, the software comes as is, without any warranty or condition, and the licensor will not be liable to you for any damages arising out of these terms or the use or nature of the software, under any kind of legal claim.***
+
+---
+
+## PART C: Trademark & Silkscreen Notice (`TI99-4A-internal-TIPI`)
+
+The **`TI99-4A-internal-TIPI`** name, associated logos, and PCB silkscreen identifiers are the exclusive property of the Author. Nothing in this license grants any right to use the `TI99-4A-internal-TIPI` name or logo to advertise or sell commercial products without a written commercial license.
